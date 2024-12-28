@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=McLaren&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.todo {
+  position: fixed;
+  top: 100px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.todo form {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Spacing between input and button */
+}
+
+input {
+  flex: 1; /* Allows the input to take up remaining space */
+  font-size: clamp(1rem, 1.3vw, 1.3rem);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #6c63ff;
+}
+
+button {
+  font-size: clamp(1rem, 1.3vw, 1.3rem);
+  padding: 10px 20px;
+  background-color: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #5750d8;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 20px;
+  padding: 0;
+}
+
+li {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-family: "McLaren", cursive;
+  margin: 20px 0;
+  color: #444;
+}
+
+li:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
